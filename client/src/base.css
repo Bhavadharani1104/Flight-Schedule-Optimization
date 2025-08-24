@@ -1,0 +1,75 @@
+/* base.css - Base styles and variables */
+:root {
+  --aviation-primary: #1e3a8a;
+  --aviation-secondary: #3b82f6;
+  --aviation-accent: #0ea5e9;
+  --aviation-dark: #0f172a;
+  --aviation-light: #f8fafc;
+  --aviation-warning: #f59e0b;
+  --aviation-danger: #ef4444;
+  --aviation-success: #10b981;
+  --aviation-gray: #64748b;
+  --aviation-border: #e2e8f0;
+  --aviation-shadow: rgba(30, 58, 138, 0.1);
+  --aviation-shadow-lg: rgba(30, 58, 138, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  min-height: 100vh;
+  color: var(--aviation-light);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.aviation-paper {
+  background: rgba(248, 250, 252, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--aviation-border);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px var(--aviation-shadow-lg);
+  color: var(--aviation-dark);
+}
+
+.aviation-button {
+  background: linear-gradient(135deg, var(--aviation-primary), var(--aviation-secondary));
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px var(--aviation-shadow);
+}
+
+.aviation-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--aviation-shadow-lg);
+}
+
+.aviation-input {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid var(--aviation-border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+  color: var(--aviation-dark);
+}
+
+.aviation-input:focus {
+  border-color: var(--aviation-accent);
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+  outline: none;
+}

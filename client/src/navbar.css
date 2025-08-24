@@ -1,0 +1,77 @@
+/* navbar.css - Aviation navbar */
+.aviation-navbar {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  backdrop-filter: blur(12px);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #0ea5e9;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aviation-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f8fafc;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.aviation-brand::before {
+  content: "✈️";
+  font-size: 1.5rem;
+}
+
+.aviation-brand:hover {
+  color: #0ea5e9;
+}
+
+.aviation-nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.aviation-nav-btn {
+  background: transparent;
+  border: 2px solid #0ea5e9;
+  color: #f8fafc;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.aviation-nav-btn:hover {
+  background: #0ea5e9;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(14, 165, 233, 0.3);
+}
+
+.aviation-logout-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  border: 2px solid #ef4444;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.aviation-logout-btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(239, 68, 68, 0.3);
+}
